@@ -2,8 +2,7 @@ function idx = npfs_post(X, alpha, beta)
 % [idx, p]=NPFS(data, labels, method, k, n_bootstraps, alpha, delta)
 % 
 %   Input
-%     :data - data in #Obs by #Features matrix
-%     :labels - labels in #Obs by 1 vector
+%     :X - binary selection matrix in #Features by #Bootstraps matrix
 %     :alpha - size of the test
 %     :beta - bias to reject
 %   Output
