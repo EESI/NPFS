@@ -30,7 +30,7 @@ First, let us begin by generating some data, and just as importantly generating 
 
 ## Running NPFS
 
-Then NPFS
+The `npfs.m` function assumes that FEAST has already been compiled and added to the Matlab path. Once this is done, `NPFS` can be called as follows.   
 
 ```
   n_select = 5;
@@ -40,6 +40,17 @@ Then NPFS
   method = 'mim';
   idx = npfs(data, labels, method, n_select, n_boots, alpha, beta);
 ```
+
+However, running the above code could take a long time to run depending on how many bootstraps you choose to use. As discussed in the manuscript `NPFS` can easily be parallelized. Parallelism is also implemented in `npfs.m`. To take advantage of this, run:
+
+```
+  matlabpool open local 12
+  idx = npfs(data, labels, method, n_select, n_boots, alpha, beta);
+  matlabpool close force
+```
+
+Note that you're limited to the number of parallel workers that you can open. Hence the above code may not work on laptops. 
+
 
 
 ## Interpreting the results 
