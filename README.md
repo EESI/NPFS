@@ -59,3 +59,7 @@ Note that you're limited to the number of parallel workers that you can open. He
 * Gregory Ditzler, Robi Polikar, Gail Rosen, "A Bootstrap Based Neyman–Pearson Test for Identifying Variable Importance," *IEEE Transactions on Neural Networks and Learning Systems*, 2014, under revision. ([pdf](http://gditzler.github.io/publications/tnnls2014.pdf))
 
 
+# Word Cloud
+
+![alt tag](https://raw.github.com/gditzler/NPFS/master/img/npfs.jpg)
+
