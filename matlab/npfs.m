@@ -31,3 +31,9 @@ parfor b = 1:n_bootstraps
 end
 p = feature_significance(V, alpha, delta); 
 idx = find(p == 1);
+
+% function to run NPFS
+function V = get_features(data, labels, n_select, method)
+selected_features = feast(method, n_select, data, labels);
+V = zeros(1, size(data,2))';
+V(selected_features) = 1;
