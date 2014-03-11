@@ -1,6 +1,6 @@
 # Neyman-Pearson Based Feature Selection (NPFS) post-hoc test
 
-There are types of feature subset selection problems that require that the size of the subset be specied prior to running the selection algorithm. NPFS works with the decisions of a `base` subset selection algorithm to determine an appropriate number of features to select given an initial starting point.  
+There are types of feature subset selection problems that require that the size of the subset be specied prior to running the selection algorithm. NPFS works with the decisions of a `base` subset selection algorithm to determine an appropriate number of features to select given an initial starting point. NPFS uses the FEAST feature selection toolbox; however, the approach is not limited to using the this toolbox. The Matlab script `npfs_post.m` is provide for those who have already run the base feature selection algorithm and would like to apply the NPFS routine.  
 
 # Installation
 The scripts can be copied into the default Matlab path (usually something like `~/Matlab/`), or add the path of where you placed the scripts into Matlab's working path (e.g., `addpath('/path/to/NPFS/scripts/')`).
