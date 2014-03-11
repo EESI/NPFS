@@ -52,9 +52,6 @@ However, running the above code could take a long time to run depending on how m
 Note that you're limited to the number of parallel workers that you can open. Hence the above code may not work on laptops. 
 
 
-
-## Interpreting the results 
-
 # Citing NPFS
 * Gregory Ditzler, Robi Polikar, Gail Rosen, "A Bootstrap Based Neyman–Pearson Test for Identifying Variable Importance,"  2014, under revision.
 
