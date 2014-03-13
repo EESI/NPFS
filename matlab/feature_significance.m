@@ -30,5 +30,9 @@ X = sum(x,2);
 p0 = k/n_feat +epsilon;
 p1 = X/n_boot;
 
+if p0 > 1
+  error('The bias is too large. Results in an invalid probability on the null hypothesis');
+end
+
 z_crit = binoinv(1-alpha, n_boot, p0);
 p(z_crit <= X) = 1;
