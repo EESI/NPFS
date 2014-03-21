@@ -24,8 +24,6 @@ parfor b = 1:n_bootstraps
   Xp = data(ibs,:);
   Yp = labels(ibs);
   
-  %i = randperm(size(Xp, 2));
-  %Xp = Xp(:, i);
   VV = get_features(Xp, Yp, k, method)';
   V(:, b) = VV;
 end
