@@ -54,7 +54,7 @@ Note that you're limited to the number of parallel workers that you can open. He
 The `beta` variable specified in the above code is used to bias the hypothesis test. For the results presented in the original NPFS manuscipt `beta=0`. 
 
 # Citing NPFS
-* Gregory Ditzler, Robi Polikar, Gail Rosen, "A Bootstrap Based Neyman–Pearson Test for Identifying Variable Importance,"  2014, under revision.
+* Gregory Ditzler, Robi Polikar, Gail Rosen, "A Bootstrap Based Neyman–Pearson Test for Identifying Variable Importance,"  2014, In press.
 
 
 # Word Cloud
