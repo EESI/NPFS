@@ -51,6 +51,7 @@ However, running the above code could take a long time to run depending on how m
 
 Note that you're limited to the number of parallel workers that you can open. Hence the above code may not work on laptops. 
 
+The `beta` variable specified in the above code is used to bias the hypothesis test. For the results presented in the original NPFS manuscipt `beta=0`. 
 
 # Citing NPFS
 * Gregory Ditzler, Robi Polikar, Gail Rosen, "A Bootstrap Based Neyman–Pearson Test for Identifying Variable Importance,"  2014, under revision.
